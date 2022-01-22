@@ -6,15 +6,17 @@
     android:orientation="vertical">
 
     <Button
+        android:textColor="@color/black"
         android:id="@+id/bt_h5Container"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="h5 container"
         android:textAllCaps="false" />
 
     <Button
+        android:textColor="@color/black"
         android:id="@+id/bt_reactContainer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="react container"
         android:textAllCaps="false" />

@@ -2,7 +2,9 @@ package com.jamesfchen.h5container
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.ApplicationInfo
 import android.os.Bundle
+import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 import com.jamesfchen.h5container.databinding.ActivityWebviewBinding
 
@@ -35,6 +37,8 @@ class WebViewActivity : AppCompatActivity() {
             binding.wvContainer.settings.allowFileAccess = true//可以使用file:// 访问
             binding.wvContainer.settings.javaScriptCanOpenWindowsAutomatically = true
             binding.wvContainer.webChromeClient = H5WebChromeClient()
+//            if (0 != (getApplicationInfo().flags and ApplicationInfo.FLAG_DEBUGGABLE)){}
+            WebView.setWebContentsDebuggingEnabled(true);
 //            val findSchemaRouter = Registry.getInstance().findSchemaRouter("webcontainerrouter")
 //            if (findSchemaRouter !=null){
 //                binding.wvContainer.addJavascriptInterface(findSchemaRouter, "ibcrouter")
