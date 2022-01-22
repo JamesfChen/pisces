@@ -1,9 +1,9 @@
 package com.jamesfchen.app
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
-import android.webkit.WebView
+import com.jamesfchen.app.databinding.ActivityMainBinding
+import com.jamesfchen.h5container.WebViewActivity
 
 /**
  * Copyright ® $ 2017
@@ -13,12 +13,11 @@ import android.webkit.WebView
  * @since: Jan/01/2022  Sat
  */
 class MainActivity : Activity() {
-    @SuppressLint("JavascriptInterface")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val wv = findViewById<WebView>(R.id.wv)
-        val h5Plugin = H5Plugin()
-        wv.addJavascriptInterface(h5Plugin,h5Plugin.name)
-//        wv.evaluateJavascript()
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.btH5Container.setOnClickListener {
+            WebViewActivity.startActivity(this, "file:///android_asset/App.html")
+        }
     }
 }

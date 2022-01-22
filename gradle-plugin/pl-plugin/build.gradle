@@ -3,8 +3,8 @@ plugins {
 }
 //发布到远程gradle plugin portal，获得approval超级慢
 pluginBundle {
-    vcsUrl = 'https://github.com/JamesfChen/bundles-assembler'
-    website = "https://github.com/JamesfChen/bundles-assembler"
+    vcsUrl = 'https://github.com/JamesfChen/pisces-leo'
+    website = "https://github.com/JamesfChen/pisces-leo"
     description = "pl-plugin"
     tags = ['pisces-leo']
     plugins {
@@ -59,27 +59,27 @@ compileKotlin {
 
 
 apply plugin: "java-gradle-plugin"
-gradlePlugin {
-    plugins {
-        rnbundlePlugin {
-            id = "${rootProject.groupId}.rnbundle-plugin"
-//            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
-            displayName = 'rnbundle-plugin'
-            description = "rnbundle-plugin"
-        }
-        h5bundlePlugin {
-            id = "${rootProject.groupId}.h5bundle-plugin"
-//            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
-            displayName = 'h5bundle-plugin'
-            description = "h5bundle-plugin"
-        }
-        flutterbundlePlugin {
-            id = "${rootProject.groupId}.flutterbundle-plugin"
-//            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
-            displayName = 'flutterbundle-plugin'
-            description = "flutterbundle-plugin"
-        }
-    }
-}
+//gradlePlugin {
+//    plugins {
+//        rnbundlePlugin {
+//            id = "${rootProject.groupId}.rnbundle-plugin"
+////            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
+//            displayName = 'rnbundle-plugin'
+//            description = "rnbundle-plugin"
+//        }
+//        h5bundlePlugin {
+//            id = "${rootProject.groupId}.h5bundle-plugin"
+////            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
+//            displayName = 'h5bundle-plugin'
+//            description = "h5bundle-plugin"
+//        }
+//        flutterbundlePlugin {
+//            id = "${rootProject.groupId}.flutterbundle-plugin"
+////            implementationClass = 'com.jamesfchen.moduleify.BundleModulePlugin'
+//            displayName = 'flutterbundle-plugin'
+//            description = "flutterbundle-plugin"
+//        }
+//    }
+//}
 dependencies {
 }

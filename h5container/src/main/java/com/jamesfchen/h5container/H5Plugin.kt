@@ -1,4 +1,4 @@
-package com.jamesfchen.app
+package com.jamesfchen.h5container
 
 import android.util.Log
 import android.webkit.JavascriptInterface

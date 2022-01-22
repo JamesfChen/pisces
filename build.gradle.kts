@@ -24,16 +24,6 @@ buildscript {
 //    id("com.jamesfchen.perf-plugin") version "1.0.0" apply false
 //}
 allprojects {
-    repositories {
-        maven { url = uri("https://jitpack.io") }
-        maven { url = uri("https://maven.oschina.net/content/groups/public/") }
-        maven { url = uri("https://plugins.gradle.org/m2/") }
-        maven { url = uri("https://maven.aliyun.com/repository/google/") }
-        maven { url = uri("./local-repo") }
-        mavenLocal()
-        mavenCentral()
-        google()
-    }
 //    tasks.withType(JavaCompile::class.java).configureEach { task ->
 //        task.options.encoding = 'UTF-8'
 //        task.sourceCompatibility = JavaVersion.VERSION_1_8
