@@ -8,8 +8,8 @@ import java.net.URI
 /**
  * 解析schema判断跳转的意图是h5 container还是react container
  */
-@Router(name = "PlRouter")
-class PlRouter :ISchemaRouter {
+@Router(name = "PgRouter")
+class PgRouter :ISchemaRouter {
     override fun onOpenUri(cxt: Context, uri: URI): Boolean {
         
         return false

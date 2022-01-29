@@ -1,1 +1,1 @@
-include(":pl-plugin")
+include(":pg-plugin")
