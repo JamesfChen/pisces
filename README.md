@@ -1,4 +1,4 @@
-# Pisces-Gemini
+# Pisces
 > World Hello , 1/29 2202.
 
 Hybrid Coder
